@@ -2,8 +2,8 @@ package Lesson1_Class;
 
 public class UserComments {
     public static void main(String[] args) {
-        //        Line comment  CTRL+/
-        //System.out.println("Hello line");
+        //        Line comment  CTRL /
+        System.out.println("Hello line");
 
         /*
                 Few lines comment CTRL+SHIFT+/
@@ -21,6 +21,7 @@ public class UserComments {
          * а вторым ожидаемый.
          * В Assert у Junit наоборот!!! (expected, actual)
          */
+
 
         System.out.println("Hello world");
     }

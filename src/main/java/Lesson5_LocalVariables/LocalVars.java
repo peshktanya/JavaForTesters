@@ -1,14 +1,17 @@
-package Lesson5_LocalVars;
+package Lesson5_LocalVariables;
 
-public class Lesson5LocalVars {
+public class LocalVars {
     public static void main(String[] args) {
         String name = "Tony";
+
         SayHello("Bob");
         SayHello(name);
+
         {
-            name = "Pete";
+            name = "Peter";
         }
         SayHello(name);
+
         {
             String lastName = "Mickael";
         }
@@ -16,6 +19,7 @@ public class Lesson5LocalVars {
     }
 
     public static void SayHello( String name ) {
+
         System.out.printf("Hello, %s\n", name);
         name = "George";
     }

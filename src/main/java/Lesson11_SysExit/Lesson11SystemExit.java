@@ -14,6 +14,6 @@ public class Lesson11SystemExit {
             else
                 System.out.println("i = " + i);
         }
-        System.out.println("End of Program");
+        System.out.println("End of Program"); // is never executed
     }
 }

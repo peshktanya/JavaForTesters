@@ -1,6 +1,6 @@
-package Lesson2_DataTypes;
+package Lesson2_DataTypes.Literals;
 
-public class Lesson2Literals {
+public class Literals {
 
     //INTEGER LITERALS
     //===============================

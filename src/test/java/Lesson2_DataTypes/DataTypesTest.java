@@ -12,7 +12,7 @@ public class DataTypesTest {
     @Test
     public void canAddTwoPlusTwo(){
         int answer = 2+2;
-        Assert.assertEquals(4, 2+2);
+        Assert.assertEquals(4, 2+2); // Expected vs Actual in TESTNG and JUnit
     }
 
     @Test
@@ -31,23 +31,22 @@ public class DataTypesTest {
     }
 
     @Test
-    public void FloatingPointType(){
-        float singlePrecision32bit;
-        double doublePrecision64bit;
+    public void FloatingInfinityType(){
 
-        System.out.println("* `float` range: " +
-                Float.MIN_VALUE + " to " +
-                Float.MAX_VALUE);
+        // exception! java.lang.ArithmeticException: / by zero
+        // System.out.println(5/0);
+        double positive_infinity = 12.0 / 0;
+        System.out.println(positive_infinity);
+        assertEquals(String.valueOf(positive_infinity), "Infinity"); //Different data types
+    }
 
-        System.out.println( "* `double` range: " +
-                Double.MIN_VALUE + " to " +
-                Double.MAX_VALUE);
+    @Test
+    public void FloatNaNType(){
 
-        singlePrecision32bit = 10.0F; // suffix F to get a float
-        assertEquals(10F, singlePrecision32bit);
-
-        doublePrecision64bit = 20.0;  // default to double
-        assertEquals(20D, doublePrecision64bit);
+        double positiveInfinity = 12.0 / 0;
+        double negativeInfinity = -15.0 / 0;
+        System.out.println(String.valueOf(positiveInfinity + negativeInfinity));
+        assertEquals(String.valueOf(positiveInfinity + negativeInfinity), "NaN"); //Not a Number
     }
 
     @Test
