@@ -33,8 +33,6 @@ public class DataTypesTest {
     @Test
     public void FloatingInfinityType(){
 
-        // exception! java.lang.ArithmeticException: / by zero
-        // System.out.println(5/0);
         double positive_infinity = 12.0 / 0;
         System.out.println(positive_infinity);
         assertEquals(String.valueOf(positive_infinity), "Infinity"); //Different data types

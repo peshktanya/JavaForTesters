@@ -1,7 +1,8 @@
 package Fundamentals.Lesson7_While;
 
-public class Lesson7DoWhile {
+public class DoWhile {
     public static void main(String[] args) throws InterruptedException {
+
         int i = 3;
         do {
             System.out.println(i);

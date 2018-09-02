@@ -9,4 +9,5 @@ public class DataTypesFields {
     long creditCardNumber = 1234_5678_9012_3456L;
     float pi = 3.14_15F;
     double d1 = 123.4;
+
 }
