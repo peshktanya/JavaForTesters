@@ -8,7 +8,7 @@ public class Overloading
     }
     public void disp(int c)
     {
-        System.out.println(c );
+        System.out.println(c);
     }
 }
 

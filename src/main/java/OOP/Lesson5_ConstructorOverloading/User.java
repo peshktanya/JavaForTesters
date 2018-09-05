@@ -9,18 +9,22 @@ public class User {
         this.password = password;
     }
 
+    //Constructor
     public User(){
         this("username", "password");
     }
 
+    //Method getter, returns String
     public String getUsername() {
         return username;
     }
 
+    //method getter, returns String
     public String getPassword() {
         return password;
     }
 
+    //method setter
     public void setPassword(String password) {
         this.password = password;
     }
