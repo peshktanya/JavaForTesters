@@ -6,25 +6,12 @@ import static org.testng.Assert.assertEquals;
 public class ExceptionsExampleTest {
 
     @Test
-    public void tryCatchFinallyPseudoCode(){
-
-        try{
-            // try and do something
-
-        }catch(NullPointerException e){
-            // handle the exception here
-
-        }finally{
-            // perform the code here
-            // regardless of whether an
-            // exception was thrown or not
-        }
-    }
-
-    @Test
     public void catchANullPointerException(){
         Integer age=null;
         String ageAsString;
+
+        // Null pointer Exception
+        //ageAsString = age.toString();
 
         try{
            ageAsString = age.toString();
@@ -33,6 +20,9 @@ public class ExceptionsExampleTest {
             age = 18;
             ageAsString = age.toString();
         }
+
+        System.out.println(age);
+        System.out.println(ageAsString);
 
         String yourAge = "You are " + age.toString() + " years old";
         assertEquals("You are 18 years old", yourAge);
@@ -46,15 +36,20 @@ public class ExceptionsExampleTest {
         try{
             ageAsString = age.toString();
 
-        }catch(NullPointerException e){
+        }
 
+        catch(NullPointerException e){
+            System.out.println("NullPointer: " +
+                    e.getMessage());
             age = 18;
             ageAsString = age.toString();
 
-        }catch(IllegalArgumentException e){
-            System.out.println("Illegal Argument: " +
-                                e.getMessage());
         }
+        catch(Exception e){
+            System.out.println("Exception: " +
+                    e.getMessage());
+        }
+
 
         String yourAge =
                "You are " + age.toString() + " years old";
@@ -80,7 +75,6 @@ public class ExceptionsExampleTest {
 
             yourAge = "You are " + age.toString() + " years old";
         }
-
         assertEquals("You are 18 years old", yourAge);
     }
 
@@ -109,7 +103,7 @@ public class ExceptionsExampleTest {
         }
     }
 
-    @Test(expectedExceptions = NullPointerException.class)
+    @Test//(expectedExceptions = NullPointerException.class)
     public void useWrongExceptionNullPointerThrown(){
         Integer age=null;
 
@@ -124,6 +118,7 @@ public class ExceptionsExampleTest {
         }
 
         // No need for any code because a NullPointerException
+        System.out.println("Some code");
     }
 
 

@@ -1,6 +1,6 @@
 package OOP.Lesson6_Static;
 
-public class StaticMethod {
+public class MethodStatic {
     // static method
     static void m1()
     {

@@ -5,7 +5,7 @@ import static java.lang.System.*;
 
 // Java to illustrate calling of static member of
 // System class without Class name
-class StaticImport {
+class ImportStatic {
     public static void main(String[] args)
     {
         // We are calling static member of System class
