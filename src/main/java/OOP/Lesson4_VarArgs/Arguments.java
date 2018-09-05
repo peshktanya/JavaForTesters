@@ -1,7 +1,7 @@
 package OOP.Lesson4_VarArgs;
 
 public class Arguments {
-    // A method that takes variable number of integer
+    // A method that takes variable number of String
     // arguments.
     static void items(String ...a)
     {

@@ -7,6 +7,7 @@ public class Program{
         Person john = new Person("John", 22, "Baker Street", "+12334567");
         john.displayName();     // норм, метод public
         john.displayAge();      // норм, метод имеет модификатор по умолчанию
+        //john.phone;
         john.displayPhone();    // норм, метод protected
         //kate.displayAddress();  // ! Ошибка, метод private
 

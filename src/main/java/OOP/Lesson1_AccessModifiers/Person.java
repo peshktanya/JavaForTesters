@@ -1,7 +1,9 @@
 package OOP.Lesson1_AccessModifiers;
 
+//Program structute:
 public class Person{
 
+    // fields
     String name;            //default
     protected int age;
     public String address;
@@ -15,11 +17,12 @@ public class Person{
         this.phone = phone;
     }
 
+    // Methods
     public void displayName(){
         System.out.printf("Name: %s \n", name);
     }
 
-    //Default
+    //Default access mod
     void displayAge(){
         System.out.printf("Age: %d \n", age);
     }
@@ -27,6 +30,7 @@ public class Person{
     private void displayAddress(){
         System.out.printf("Address: %s \n", address);
     }
+
 
     protected void displayPhone(){
         System.out.printf("Phone: %s \n", phone);
