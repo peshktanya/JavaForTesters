@@ -2,10 +2,10 @@ package Fundamentals.Lesson12_Arrays;
 
 import java.util.Arrays;
 
-public class EqualsIntArray {
+public class WorkingWithEqualsArray {
     public static void main(String[] args) {
 
-        // initiliazing three object arrays
+        // initiliazing arrays
         int[] arr1 = new int[] { 192, 168 };
         int[] arr2 = new int[] { 192, 168, 0, 1 };
         int[] arr3 = new int[] { 192, 168 };

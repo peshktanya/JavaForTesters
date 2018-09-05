@@ -16,7 +16,7 @@ public class Literals {
     double d1 = 123.4;
     // same value as d1, but in scientific notation
     double d2 = 1.234e2;
-    float f1  = 123.4f;
+    float f1  = 123.4F;
 
     //Character and String Literals
     //==============================
@@ -44,7 +44,7 @@ public class Literals {
 
     // Invalid: cannot put underscores
     // in the 0x radix prefix
-    //int x4 = 0_x52;
+    int x4 = 0x52;
     // Invalid: cannot put underscores
     // at the beginning of a number
     //int x5 = 0x_52;

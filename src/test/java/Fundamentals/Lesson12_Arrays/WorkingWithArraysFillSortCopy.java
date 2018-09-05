@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.Arrays;
 
-public class ArraysFillCopy {
+public class WorkingWithArraysFillSortCopy {
 
     String[] workdays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 

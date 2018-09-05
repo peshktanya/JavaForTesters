@@ -1,6 +1,6 @@
 package Fundamentals.Lesson12_Arrays;
 
-public class CopyArray {
+public class WorkingWithCopyArray {
     public static void main(String[] args) {
 
         int arr1[] = { 0, 1, 2, 3, 4, 5 };

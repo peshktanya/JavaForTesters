@@ -1,6 +1,6 @@
 package Fundamentals.Lesson12_Arrays;
 
-public class StringArray {
+public class ForEach {
     public static void main(String[] args) {
 
         String[] toppings = new String[10];

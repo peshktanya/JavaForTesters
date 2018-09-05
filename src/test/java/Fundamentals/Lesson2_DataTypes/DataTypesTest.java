@@ -32,7 +32,6 @@ public class DataTypesTest {
 
     @Test
     public void FloatingInfinityType(){
-
         double positive_infinity = 12.0 / 0;
         System.out.println(positive_infinity);
         assertEquals(String.valueOf(positive_infinity), "Infinity"); //Different data types
@@ -50,6 +49,8 @@ public class DataTypesTest {
     @Test
     public void CharacterType(){
         char aChar = '\u0026';
+        char aCharCopy = '&';
+
         assertEquals(aChar, '&');
     }
 }

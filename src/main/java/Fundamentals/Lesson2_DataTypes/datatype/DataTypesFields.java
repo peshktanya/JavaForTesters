@@ -1,8 +1,9 @@
 package Fundamentals.Lesson2_DataTypes.datatype;
 
 public class DataTypesFields {
-    boolean result = true;
-    char capitalC = 'C';
+    boolean result = false;
+    char capitalC = 'c';
+    char ge = '\u0003';
     byte b = 100;
     short s = 10000;
     int i = 100000;

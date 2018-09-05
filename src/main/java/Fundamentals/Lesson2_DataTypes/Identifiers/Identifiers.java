@@ -12,4 +12,5 @@ public class Identifiers {
     double $myvariable;
     float sum_of_array;
     char char123;
+    int прпржж;
 }

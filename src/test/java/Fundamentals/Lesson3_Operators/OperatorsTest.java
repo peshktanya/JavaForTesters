@@ -25,7 +25,7 @@ public class OperatorsTest {
         int count = 10;
         assertEquals(10, count);
 
-        count += 2;
+        count += 2; // count = count + 2;
         System.out.println("+= increments by");
         assertEquals( 12, count);
 

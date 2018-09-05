@@ -9,7 +9,7 @@ public class Lesson11SystemExit {
             {
                 System.out.println("exit...");
                 // Terminate JVM
-                System.exit(0);
+               // System.exit(0);
             }
             else
                 System.out.println("i = " + i);

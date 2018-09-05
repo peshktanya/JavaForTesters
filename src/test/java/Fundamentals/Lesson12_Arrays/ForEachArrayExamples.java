@@ -3,10 +3,22 @@ package Fundamentals.Lesson12_Arrays;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ArrayExampleTest {
+public class ForEachArrayExamples {
 
         String[] workdays = {"Monday", "Tuesday", "Wednesday",
                 "Thursday", "Friday"};
+
+    @Test
+    public void accessValuesInArray(){
+
+        Assert.assertEquals(workdays[0], "Monday");
+        Assert.assertEquals(workdays[4],"Friday");
+    }
+
+    @Test
+    public void arraySize(){
+        Assert.assertEquals(workdays.length, 5);
+    }
 
         @Test
         public void forEachLoop(){
@@ -16,7 +28,7 @@ public class ArrayExampleTest {
                 days = days + "|" + workday;
             }
 
-            Assert.assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday",days);
+            Assert.assertEquals(days, "|Monday|Tuesday|Wednesday|Thursday|Friday");
         }
 
         @Test
@@ -27,7 +39,7 @@ public class ArrayExampleTest {
                 days = days + "|" + workdays[i];
             }
 
-            Assert.assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday",days);
+            Assert.assertEquals(days, "|Monday|Tuesday|Wednesday|Thursday|Friday");
         }
 
         @Test
@@ -39,8 +51,7 @@ public class ArrayExampleTest {
             }
 
             Assert.assertEquals(
-                    "|0-Monday|1-Tuesday|2-Wednesday|3-Thursday|4-Friday",
-                    days);
+                    days, "|0-Monday|1-Tuesday|2-Wednesday|3-Thursday|4-Friday");
         }
 
         @Test
@@ -51,7 +62,7 @@ public class ArrayExampleTest {
             for(; i<5; i++){
                 days = days + "|" + workdays[i];
             }
-            Assert.assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday",days);
+            Assert.assertEquals(days, "|Monday|Tuesday|Wednesday|Thursday|Friday");
         }
 
         @Test
@@ -63,7 +74,7 @@ public class ArrayExampleTest {
                 days = days + "|" + workdays[i];
                 i++;
             }
-            Assert.assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday",days);
+            Assert.assertEquals(days, "|Monday|Tuesday|Wednesday|Thursday|Friday");
         }
 
         @Test
@@ -88,19 +99,7 @@ public class ArrayExampleTest {
                         " at position " + dayindex);
                 dayindex++;
             }
-            Assert.assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday",days);
-        }
-
-        @Test
-        public void accessValuesInArray(){
-
-            Assert.assertEquals("Monday", workdays[0]);
-            Assert.assertEquals("Friday", workdays[4]);
-        }
-
-        @Test
-        public void arraySize(){
-            Assert.assertEquals(5, workdays.length);
+            Assert.assertEquals(days, "|Monday|Tuesday|Wednesday|Thursday|Friday");
         }
 
         @Test
@@ -110,7 +109,7 @@ public class ArrayExampleTest {
             for(int i=0; i<workdays.length; i++){
                 days = days + "|" + workdays[i];
             }
-            Assert.assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday",days);
+            Assert.assertEquals(days,"|Monday|Tuesday|Wednesday|Thursday|Friday");
         }
 
 }
