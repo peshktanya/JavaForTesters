@@ -3,6 +3,7 @@ package OOP.Lesson6_Static;
 // Java program to illustrate the behavior of
 // final static variable
 class FinalNotInit {
+
     //final static int x;
     public static void main(String[] args)
     {

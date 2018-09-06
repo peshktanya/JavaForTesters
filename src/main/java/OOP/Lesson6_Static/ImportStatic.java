@@ -13,5 +13,6 @@ class ImportStatic {
         out.println(sqrt(4));
         out.println(pow(2, 2));
         out.println(abs(6.3));
+        System.out.println("");
     }
 }

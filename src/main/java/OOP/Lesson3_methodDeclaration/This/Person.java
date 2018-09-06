@@ -9,14 +9,15 @@ class Person{
     // 1. Без параметров, вызывает  третий конструктор Person(String name, int age)
     Person()
     {
+
         this("John Smith", 18);
     }
-    //2. с одним параметром, вызывает  третий конструктор Person(String name, int age)
+
+    //2. с одним параметром, вызывает третий конструктор Person(String name, int age)
     Person(String name)
     {
         this(name, 18);
     }
-
 
     // 3. с двумя параметрами
     //параметры называются так же, как и поля класса

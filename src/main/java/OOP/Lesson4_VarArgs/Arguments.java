@@ -17,6 +17,7 @@ public class Arguments {
     {
         // Calling the varargs method with different number
         // of parameters
+
         items("one");         // one parameter
         items("one", "two", "three", "four");  // four parameters
         items();            // no parameter

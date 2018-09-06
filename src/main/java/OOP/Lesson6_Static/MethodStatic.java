@@ -9,6 +9,8 @@ public class MethodStatic {
 
     public static void main(String[] args)
     {
+        MethodStatic method1 = new MethodStatic();
+        method1.m1();
         // calling m1 without creating
         // any object of class Test
         m1();

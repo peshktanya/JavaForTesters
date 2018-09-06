@@ -3,7 +3,7 @@ package OOP.Lesson4_VarArgs;
 public class Rules {
 
     //Compile time error
-//    void method(String... a, int... b){}
+    //void method(String... a, int... b){}
     //Compile time error
 //    void method(int... a, String b){}
 

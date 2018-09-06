@@ -19,6 +19,7 @@ public class Person{
 
     // Methods
     public void displayName(){
+
         System.out.printf("Name: %s \n", name);
     }
 

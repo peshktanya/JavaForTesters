@@ -5,6 +5,7 @@ public class Person
     // constructor with no argument
     Person()
     {
+
         System.out.println("Constructor with no arguments");
     }
 
