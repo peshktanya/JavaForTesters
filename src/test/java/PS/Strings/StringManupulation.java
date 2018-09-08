@@ -1,50 +1,29 @@
-package OOP.Lesson9_Collections.Strings;
-
+package PS.Strings;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class StringManipulationTest {
-
-    @Test
-    public void canUseReplace(){
-        String hello = "Hello fella fella fella";
-
-        Assert.assertEquals( hello.replace("fella", "World"),
-                    ("Hello World World World"));
-
-        Assert.assertEquals( hello.replaceFirst("fella", "World"),
-                    ("Hello World fella fella"));
-
-        Assert.assertEquals( hello.replaceAll("fella", "World"),
-                    ("Hello World World World"));
-
-        Assert.assertEquals("1,2,3".replaceFirst("[0-9]","digit"),
-                    ("digit,2,3"));
-
-        Assert.assertEquals("1,2,3".replaceAll("[0-9]", "digit"),
-                    ("digit,digit,digit"));
-    }
+public class StringManupulation {
 
     @Test
     public void canConvertToUpperCaseAndLowerCase(){
         String text = "In the lower 3rd";
 
         Assert.assertEquals( text.toUpperCase(),
-                    ("IN THE LOWER 3RD"));
+                ("IN THE LOWER 3RD"));
 
         Assert.assertEquals( text.toLowerCase(),
-                    ("in the lower 3rd"));
+                ("in the lower 3rd"));
     }
 
     @Test
     public void canTrimAString(){
         String padded = "    trim me    ";
-        Assert.assertEquals(padded.length(), (15));
+        Assert.assertEquals(padded.length(), 15);
 
         String trimmed = padded.trim();
 
-        Assert.assertEquals(trimmed.length(), (7));
-        Assert.assertEquals(trimmed, ("trim me"));
+        Assert.assertEquals(trimmed.length(),7);
+        Assert.assertEquals(trimmed, "trim me");
     }
 
     @Test
@@ -59,7 +38,7 @@ public class StringManipulationTest {
         Assert.assertEquals( digits.substring(5,9), ("5678"));
 
         Assert.assertEquals( digits.substring(5,digits.length()),
-                    ("56789"));
+                ("56789"));
 
     }
 
@@ -76,8 +55,8 @@ public class StringManipulationTest {
 
         String use = "%s %s towards %d large %s";
         Assert.assertEquals(
-            String.format(use, "Bob", "ran", 6, "onions" ),
-            ("Bob ran towards 6 large onions"));
+                String.format(use, "Bob", "ran", 6, "onions" ),
+                ("Bob ran towards 6 large onions"));
 
         String txt = "%2$s %4$s towards %3$d large %1$s";
         Assert.assertEquals(
@@ -99,6 +78,4 @@ public class StringManipulationTest {
         Assert.assertEquals(results[0], ("1"));
         Assert.assertEquals(results[9], ("10"));
     }
-
-
 }

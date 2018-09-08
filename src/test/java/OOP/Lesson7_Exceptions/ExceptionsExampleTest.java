@@ -129,16 +129,4 @@ public class ExceptionsExampleTest {
     }
 
 
-    @Test
-    public void noExceptionThrown(){
-        IllegalArgumentException e =
-                new IllegalArgumentException("never thrown");
-    }
-
-
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void passwordMustBeGreaterThan6Chars(){
-        User aUser = new User("username", "I23456");
-    }
-
 }

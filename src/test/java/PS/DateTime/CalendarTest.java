@@ -14,21 +14,22 @@ public class CalendarTest {
 
         Calendar cal = Calendar.getInstance();
 
-        System.out.println(cal.getTime().getTime());
-        System.out.println(System.currentTimeMillis());
+        System.out.println("Current Time in ms is : " + cal.getTime().getTime());
+        System.out.println("Current Time in ms is : " + System.currentTimeMillis());
 
-        System.out.println(cal.toString());
+        System.out.println("Current Time Full format : \n " + cal.toString());
 
         Calendar sameDate = Calendar.getInstance();
         sameDate.setTime(cal.getTime());
+
         assertEquals(cal.equals(sameDate), (true));
         assertEquals(cal.compareTo(sameDate), (0));
 
-        System.out.println(cal.getTime().toString());
+        System.out.println("Get Time to String is : " + cal.getTime().toString());
         Calendar oneWeekFromNow = Calendar.getInstance();
         oneWeekFromNow.setTime(cal.getTime());
         oneWeekFromNow.add(Calendar.DATE,7);
-        System.out.println(oneWeekFromNow.getTime().toString());
+        System.out.println("One week later will be : " + oneWeekFromNow.getTime().toString());
 
         assertEquals(oneWeekFromNow.after(cal), (true));
         assertEquals(cal.before(oneWeekFromNow), (true));

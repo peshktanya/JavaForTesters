@@ -1,8 +1,6 @@
 package PS.DateTime;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.Date;
 
 import static org.testng.Assert.assertEquals;
