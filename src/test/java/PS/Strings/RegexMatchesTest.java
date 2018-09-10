@@ -1,7 +1,8 @@
-package OOP.Lesson9_Collections.Strings;
+package PS.Strings;
 
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class RegexMatchesTest {
 
@@ -15,11 +16,11 @@ public class RegexMatchesTest {
         assertEquals("".matches(mustIncludeADigit), (false));
         assertEquals("   ".matches(mustIncludeADigit),(false));
 
-        assertEquals("12345678".matches(mustIncludeADigit), (true));
-        assertEquals("1nvalid".matches(mustIncludeADigit), (true));
-        assertEquals("1nval1d".matches(mustIncludeADigit), (true));
-        assertEquals("inval1d".matches(mustIncludeADigit), (true));
-        assertEquals("invali6".matches(mustIncludeADigit), (true));
+        assertTrue("12345678".matches(mustIncludeADigit));
+        assertTrue("1nvalid".matches(mustIncludeADigit));
+        assertTrue("1nval1d".matches(mustIncludeADigit));
+        assertTrue("inval1d".matches(mustIncludeADigit));
+        assertTrue("invali6".matches(mustIncludeADigit));
 
 
         String mustIncludeUppercase = ".*[A-Z]+.*";

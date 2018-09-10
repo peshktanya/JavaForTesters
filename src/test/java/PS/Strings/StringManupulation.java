@@ -31,14 +31,10 @@ public class StringManupulation {
 
         String digits = "0123456789";
 
-        Assert.assertEquals( digits.substring(5), ("56789"));
-
-        Assert.assertEquals(digits.substring(5, 6), ("5"));
-
-        Assert.assertEquals( digits.substring(5,9), ("5678"));
-
-        Assert.assertEquals( digits.substring(5,digits.length()),
-                ("56789"));
+        Assert.assertEquals( digits.substring(5), "56789");
+        Assert.assertEquals(digits.substring(5, 6), "5");
+        Assert.assertEquals( digits.substring(5,9), "5678");
+        Assert.assertEquals( digits.substring(5), "56789");
 
     }
 
