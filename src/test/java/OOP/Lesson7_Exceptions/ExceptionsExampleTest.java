@@ -48,6 +48,7 @@ public class ExceptionsExampleTest {
         catch(Exception e){
             System.out.println("Exception: " +
                     e.getMessage());
+            age = 18;
         }
 
 
@@ -79,11 +80,21 @@ public class ExceptionsExampleTest {
     }
 
     @Test(expectedExceptions = NullPointerException.class)
+    public void nullPointerExceptionExpected(){
+        Integer age=null;
+        age.toString();
+    }
+
+    @Test(expectedExceptions = NullPointerException.class)
     public void throwANullPointerException(){
         Integer age=null;
+        System.out.println("Code before exception");
         String ageAsString = age.toString();
+        System.out.println("Code after exception");
         String yourAge = "You are " + ageAsString + " years old";
         assertEquals("You are 18 years old", yourAge);
+        System.out.println("Test finished");
+
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
@@ -119,13 +130,6 @@ public class ExceptionsExampleTest {
 
         // No need for any code because a NullPointerException
         System.out.println("Some code");
-    }
-
-
-    @Test(expectedExceptions = NullPointerException.class)
-    public void nullPointerExceptionExpected(){
-        Integer age=null;
-        age.toString();
     }
 
 
